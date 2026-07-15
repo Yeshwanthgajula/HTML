@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formst</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Registration Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" name="username" minlength="3" maxlength="8" required value="Yesh" readonly>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" name="email" autofocus>
+            <br><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" minlength="8" >
+            <br><br>
+            <label type="age"> Age</label>
+            <input type="number" id="age" min="18" max="25" step="5">
+            <br><br>
+             <label type="phone"> Phone</label>
+            <input type="tel" minlength="1" maxlength="10" required>
+            <br><br>
+             <label type="dob">Dob</label>
+            <input type="date" minlength="1-1-2000" maxlength="31-12-2030">
+            <br><br>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" checked>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" checked>
+            <label for="female">Female</label>
+            <br><br>
+            <!--Type--"checkbox"-->
+            <label>Skills</label>
+            <input type="checkbox" id="html" name="skills" value="Html" checked>
+            <label for="html">Html</label>
+            <input type="checkbox" id="css" name="skills">
+            <label for="css">Css</label>
+            <input type="checkbox" id="js" name="skills">
+            <label for="js">Js</label>
+            <input type="checkbox" id="react" name="skills">
+            <label for="react">ReactJs</label>
+            <br><br>
+            <!--"Type file"-->
+            <label for="photo">upload photo:</label>
+            <input type="file" id="photo" name="photo" multiple accept=".pdf">
+            <!--"Type submit"-->
+            <br><br>
+            <!--"Type Dropdown"-->
+            <label for="country">Country:</label>
+            <select id="country">
+                <option hidden>--select country--</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="AUSTRALIA">AUSTRALIA</option>
+                <option value="RUSSIA">RUSSIA</option>
+                <option value="GERMANY">GERMANY</option>
+            </select>
+            <br><br>
+            <!--"Text area"-->
+            <label for="feedback">feedback:</label>
+            <textarea id="feedback" rows="5" cols="50"></textarea>
+            <br><br>
+            <!--"Type color"-->
+            <label for="color">Select color:</label>
+            <input type="color" id="color">
+            <br><br>
+            <!--"Type range"-->
+            <label for="range">Brightness:</label>
+            <input type="range" value="10" name="Brightness" min="0" max="100" step="50">
+            <br><br>
+            <input type="submit" value="Register😎">
+            <input type="reset" value="Clear">
+        </fieldset>
+    </form>
+</body>
+</html>
